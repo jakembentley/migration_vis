@@ -1,0 +1,51 @@
+{% extends "templates/projectBase.html" %}
+{% block projectContent %}
+<style>
+
+.ticks {
+  font: 10px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
+
+.track-inset {
+  stroke: #ddd;
+  stroke-width: 8px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  cursor: crosshair;
+}
+
+.handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
+
+</style>
+<h2>Final Project: Refugee Migration</h2>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+
+
+
+<div id="chart" style="margin: 0px auto; text-align: center;"></div>
+<script src="web/vis.js"></script>
+<div id="slider3"></div>
+<div id="map"></div>
+
+{% endblock %}
